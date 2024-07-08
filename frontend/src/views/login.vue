@@ -98,6 +98,13 @@ import {
   checkLoginAPI,
   WSCKLoginAPI,
 } from '@/api/index'
+import SubmitForm from "@/components/SubmitForm.vue";
+
+export default {
+  components: {
+    SubmitForm,
+  },
+};
 
 export default {
   setup() {
@@ -109,7 +116,7 @@ export default {
       allowAdd: true,
       cookie: '',
       QRCode: undefined,
-      qrCodeVisibility: false,
+      qrCodeVisibility: true,
       token: undefined,
       okl_token: undefined,
       cookies: undefined,
@@ -119,8 +126,8 @@ export default {
       marginWSCKCount: 0,
       allowWSCKAdd: true,
       jdwsck: undefined,
-      showQR:false,
-      showWSCK:false,
+      showQR:true,
+      showWSCK:true,
       showCK:true,
 
     })
